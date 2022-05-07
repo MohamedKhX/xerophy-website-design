@@ -6,12 +6,13 @@
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="css/style.css">
     <title>Xerophy - a lightweight framework for php developers</title>
 </head>
 <body>
     <!-- Start Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-light" data-aos="fade-in">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img class="navbar-logo" src="img/xerophy-logo.svg" alt="">
@@ -64,7 +65,7 @@
     <!-- End Navbar -->
 
     <!-- Start Header -->
-    <header class="header">
+    <header class="header" data-aos="fade-in">
         <div class="container-lg container-fluid mt-2">
             <div class="row">
                 <h1 id="header-text" class="h1 text-center mb-3 ele"></h1>
@@ -97,7 +98,15 @@
 
     <!-- Features Section -->
     <section class="section-features">
-        <div class="container">
+        <div class="container"
+             data-aos="fade-up"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-once="false"
+             data-aos-anchor-placement="top-center">
             <div class="text-center">
                 <p class="color-primary fw-bold">Features</p>
                 <h2 class="h2">A Simple framework with powerful features</h2>
@@ -144,7 +153,15 @@
         </div>
         <hr>
         <div class="container section2">
-            <div class="row mb-5">
+            <div class="row mb-5"
+                 data-aos="fade-left"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+                 data-aos-mirror="true"
+                 data-aos-once="false"
+                 data-aos-anchor-placement="top-center">
                 <div class="col-lg-6 col-12 text-center">
                     <img class="img-feature-1" src="img/carbon(1).png" alt="">
                 </div>
@@ -171,7 +188,15 @@
                 </div>
             </div>
             <hr>
-            <div class="row mt-5">
+            <div class="row mt-5"
+                 data-aos="zoom-in-right"
+                 data-aos-offset="200"
+                 data-aos-delay="50"
+                 data-aos-duration="1000"
+                 data-aos-easing="ease-in-out"
+                 data-aos-mirror="true"
+                 data-aos-once="false"
+                 data-aos-anchor-placement="top-center">
                 <div class="col-lg-6 col-12 d-flex flex-column justify-content-center moveToLeft">
                     <img class="feature-img2" src="img/Featured%20icon-4.png" alt="">
                     <h3 class="h3">Open source!</h3>
@@ -203,7 +228,15 @@
     <!-- End Features Section -->
 
     <!-- Start Section-Start-Use-It -->
-    <section class="start-use-it">
+    <section class="start-use-it"
+             data-aos="zoom-out"
+             data-aos-offset="200"
+             data-aos-delay="50"
+             data-aos-duration="1000"
+             data-aos-easing="ease-in-out"
+             data-aos-mirror="true"
+             data-aos-once="false"
+             data-aos-anchor-placement="top-center">
         <div class="container text-center">
             <h1 class="h1">Start use it now!</h1>
             <p class="paragraph">Join over 4,000+ startups already growing with Xerophy.</p>
@@ -298,6 +331,10 @@
     <!-- End Footer -->
 
     <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="js/script.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
