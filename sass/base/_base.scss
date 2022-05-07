@@ -1,0 +1,17 @@
+html {
+  @include respond(tab-land) {
+    font-size: 90%;
+  }
+  @include respond(tab-port) {
+    font-size: 85%;
+  }
+  @include respond(phone) {
+    font-size: 80%;
+  }
+  @include respond(big-desktop) {
+    font-size: 100%;
+  }
+  @include respond(very-big-desktop) {
+    font-size: 110%;
+  }
+}

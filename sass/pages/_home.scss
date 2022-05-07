@@ -1,0 +1,95 @@
+.header {
+  justify-content: center;
+  padding: 7rem;
+
+  @include respond(tab-port) {
+    padding: 6rem 2rem;
+  }
+  @include respond(phone) {
+    padding: 16.5rem 0;
+  }
+  .php {
+    color: #5925DC;
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+  &-img {
+    margin-top: 4rem;
+    width: 80%;
+
+    @include respond(tab-land) {
+      width: 90%;
+    }
+    @include respond(tab-port) {
+      width: 100%;
+    }
+  }
+}
+
+
+.moveToLeft {
+  transform: translateX(-8rem);
+  @include respond(tab-land) {
+    transform: translateX(0);
+  }
+}
+
+.section2 {
+  margin-top: 10rem;
+}
+
+.feature-img {
+  margin: 1.2rem;
+}
+
+.img-feature {
+  &-1 {
+    width: 50rem;
+    transform: translateX(-15rem);
+
+    @include respond(tab-port) {
+      transform: translateX(0);
+    }
+    @include respond(phone) {
+      transform: translateX(-4.5rem);
+    }
+  }
+
+  &-2 {
+    width: 50rem;
+
+  }
+}
+
+
+.feature-ul {
+  list-style: none;
+  .feature-item {
+    display: flex;
+    margin: 2rem;
+    img {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 1rem;
+    }
+    p {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}
+
+.feature-img2 {
+  width: 4rem;
+}
+
+
+.start-use-it {
+  margin: 15rem 0;
+  .h1 {
+    color: #101828;
+    font-weight: bold;
+  }
+}

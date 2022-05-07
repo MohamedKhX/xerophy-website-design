@@ -1,0 +1,71 @@
+.btn {
+  @include respond(tab-land) {
+     font-size: 1.15rem;
+  }
+}
+.btn-primary {
+  color: $white;
+
+  &:hover, &:active, &:focus {
+    color: $white;
+  }
+
+  &-gradient {
+    background-image: linear-gradient(to right, #4776E6 0%, #8E54E9  51%, #4776E6  100%);
+    padding: .5rem .9rem;
+    text-align: center;
+    text-transform: uppercase;
+    transition: .25s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 6px;
+    display: block;
+    font-weight: bold;
+
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+      transform: scale(1.2);
+    }
+
+    &:active {
+      transform: scale(1.05);
+    }
+  }
+}
+
+.btn-outline-secondary {
+  background-color: $white;
+  color: #344054;
+  font-weight: bold;
+  border-color: #D0D5DD;
+  &:hover {
+    background-color: #f4f4f4;
+    color: #344054;
+  }
+}
+
+.btn-warning {
+  color: $white;
+
+  &:hover, &:active, &:focus {
+    color: $white;
+  }
+}
+
+.btn-danger {
+  color: $white;
+
+  &:hover, &:active, &:focus {
+    color: $white;
+  }
+}
+
+.btn-icon {
+  span {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
