@@ -9,7 +9,7 @@ html {
     font-size: 80%;
   }
   @include respond(big-desktop) {
-    font-size: 90%;
+    font-size: 7%;
   }
   @include respond(very-big-desktop) {
     font-size: 100%;
